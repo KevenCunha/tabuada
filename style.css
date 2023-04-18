@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0088cc;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.p1{
+    color: black;
+}
+
+.p2{
+    color: white;
+}
+
+main {
+    padding: 25px;
+
+}
+
+.dark-mode {
+    background-color: black;
+    color: azure;
+    background: black;
+    color: azure;
+}
+
+.dark-mode p{
+    color: white;
+}
+
+.dark-mode header {
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    padding: 5px 8px;
+    border: 2px solid #0088cc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .7s ease;
+}
+
+button:hover{
+    background-color: #fff;
+    color: #0088cc;
+ } 
+
+ input{
+    text-align: center;
+ }
+
+ .header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0088cc;
+    color: black;
+    padding: 20px;
+    text-align: center;
+ }
+
+ footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+ }
+
+ .img-email{
+    width: 20px;
+ }
+
+ .img-github{
+    width: 40px;
+ }
+
+ .m-b-footer{
+    color: black;
+ }
+
+ #tabela-tabuada{
+    margin: auto;
+    font-size: 25px;
+ }
+ 
+ a{
+    color: white;
+ }
+
+ .btnBusca{
+    width: 25px;
+ }

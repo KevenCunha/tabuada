@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+
+    <script>
+        function gerarTabuada() {
+            var numero = parseInt(document.getElementById('numero').value);
+            var tabela = document.getElementById('tabela-tabuada');
+
+            tabela.innerHTML = ""; //limpar a tabela antes de gerar a outra.
+
+            //Gerar tabuada
+
+            for (var i = 1; i <= 10; i++) {
+                var resultado = numero * i;
+                var linha = "<tr><td>" + numero + " X " + i + "</td><td>" + " = " + resultado + "</td></tr>";
+
+                tabela.innerHTML += linha
+
+            }
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tabuada Dinâmica</h1>
+        <button id="toggle-mode">Alternar Modo</button>
+    </header>
+
+
+    <br><br><br><br>
+    <p class="p1">Digite um valor para gerar a tabuada:</p>
+
+    <input type="text" name="" id="numero" placeholder="Buscar..." />
+    <img src="img/buscazul.png" class="btnBusca" alt="Buscar" />
+    <br><br>
+    <button onclick="gerarTabuada()">Gerar Tabuada</button>
+    <br><br><br><br><br><br><br><br>
+    <table id="tabela-tabuada"></table>
+
+
+    <script src="main.js"></script>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <header>
+        <footer class="main_footer container">
+
+            <div class="content">
+                <div class="colfooter">
+
+                    <h3 class="titleFooter"> Menu</h3>
+
+                </div>
+                <!--Col Footer 1-->
+                <div class="colfooter">
+
+                    <h3 class="titleFooter"> Contato</h3>
+                    <p><i class="icon icon-mail"></i> <img src="img/img4.png" class="img-email" alt="">
+                        kevensantiago10@gmail.com</p>
+                    <p><i class="icon icon-github"></i> <img src="img/GitHub-logo.png" class="img-github" alt=""> <a
+                            href="https://github.com/KevenCunha"> KevenCunha</a> </p>
+                </div>
+
+                <!--Col Footer 2-->
+                <div class="clear"></div>
+
+            </div>
+            <!--Contant-->
+            <div class="main_footer_copy">
+
+                <h3 class="m-b-footer"> Projeto - 2023, todos os direitos reservados.</h3>
+                <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: Keven
+                    Cunha</a></p>
+
+            </div>
+        </footer>
+    </header>
+
+
+</body>
+
+</html>
